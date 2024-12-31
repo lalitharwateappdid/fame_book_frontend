@@ -25,8 +25,8 @@ export const Details = () => {
 
         {/* main */}
         <div className="container mx-auto ">
-          <div className="flex flex-col lg:flex-row lg:gap-[60px]">
-            <div>
+          <div className="flex flex-col lg:flex-row  lg:gap-[60px]">
+            <div class="flex flex-col items-center">
               {/* image container */}
               <div>
                 <img
@@ -52,8 +52,8 @@ export const Details = () => {
               </div>
             </div>
 
-            <div className="flex flex-row lg:flex-col justify-end">
-              <h3 className="text-5xl text-white inria-serif">Tales Under a Purple Sky</h3>
+            <div className="mt-[30px] flex flex-col  justify-end">
+              <h3 className="text-4xl lg:text-5xl text-white inria-serif">Tales Under a Purple Sky</h3>
 
               {/* star and reviews container */}
               <div className="flex gap-2 items-center mt-[20px] text-white">
@@ -75,7 +75,7 @@ export const Details = () => {
               </div>
 
               {/* description container */}
-              <p className="mt-[20px] text-sm text-white">
+              <p className="mt-[20px]  text-xs sm:text-sm text-white">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 quae ab illo inventore veritatis et quasi architecto beatae

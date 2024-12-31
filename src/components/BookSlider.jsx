@@ -19,7 +19,15 @@ export const BookSlider = ({ headerTitle, css, slider = true }) => {
             <SwiperSlide>
               <div className="relative">
                 <div class="absolute top-[30px] left-0 ">
-                <p className="bg-[#B22323] text-white py-[3px] px-[15px] " style={{borderTopRightRadius: "20px",borderBottomRightRadius: "20px"}}>22% off</p>
+                  <p
+                    className="bg-[#B22323] text-white py-[3px] px-[15px] "
+                    style={{
+                      borderTopRightRadius: "20px",
+                      borderBottomRightRadius: "20px",
+                    }}
+                  >
+                    22% off
+                  </p>
                 </div>
                 <img
                   className="w-[226px] h-[280px]"
@@ -29,9 +37,17 @@ export const BookSlider = ({ headerTitle, css, slider = true }) => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="relative">
+              <div className="relative">
                 <div class="absolute top-[30px] left-0 ">
-                <p className="bg-[#B22323] text-white py-[3px] px-[15px] " style={{borderTopRightRadius: "20px",borderBottomRightRadius: "20px"}}>22% off</p>
+                  <p
+                    className="bg-[#B22323] text-white py-[3px] px-[15px] "
+                    style={{
+                      borderTopRightRadius: "20px",
+                      borderBottomRightRadius: "20px",
+                    }}
+                  >
+                    22% off
+                  </p>
                 </div>
                 <img
                   className="w-[226px] h-[280px]"
@@ -41,9 +57,17 @@ export const BookSlider = ({ headerTitle, css, slider = true }) => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="relative">
+              <div className="relative">
                 <div class="absolute top-[30px] left-0 ">
-                <p className="bg-[#B22323] text-white py-[3px] px-[15px] " style={{borderTopRightRadius: "20px",borderBottomRightRadius: "20px"}}>22% off</p>
+                  <p
+                    className="bg-[#B22323] text-white py-[3px] px-[15px] "
+                    style={{
+                      borderTopRightRadius: "20px",
+                      borderBottomRightRadius: "20px",
+                    }}
+                  >
+                    22% off
+                  </p>
                 </div>
                 <img
                   className="w-[226px] h-[280px]"
@@ -51,22 +75,30 @@ export const BookSlider = ({ headerTitle, css, slider = true }) => {
                   alt=""
                 />
                 <div className="mt-[10px]">
-                    {/* book name */}
-                <p className="text-xl font-semibold">Tales under a pur..</p>
-                    {/* author name */}
-                <p className="text-xs font-thin uppercase text-[#EE8946]">By Esther Howard</p>
-                
-                {/* stars and review container */}
-                <div className="flex justify-between">
-                    
-                </div>
+                  {/* book name */}
+                  <p className="text-xl font-semibold">Tales under a pur..</p>
+                  {/* author name */}
+                  <p className="text-xs font-thin uppercase text-[#EE8946]">
+                    By Esther Howard
+                  </p>
+
+                  {/* stars and review container */}
+                  <div className="flex justify-between"></div>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="relative">
+              <div className="relative">
                 <div class="absolute top-[30px] left-0 ">
-                <p className="bg-[#B22323] text-white py-[3px] px-[15px] " style={{borderTopRightRadius: "20px",borderBottomRightRadius: "20px"}}>22% off</p>
+                  <p
+                    className="bg-[#B22323] text-white py-[3px] px-[15px] "
+                    style={{
+                      borderTopRightRadius: "20px",
+                      borderBottomRightRadius: "20px",
+                    }}
+                  >
+                    22% off
+                  </p>
                 </div>
                 <img
                   className="w-[226px] h-[280px]"
@@ -76,9 +108,17 @@ export const BookSlider = ({ headerTitle, css, slider = true }) => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="relative">
+              <div className="relative">
                 <div class="absolute top-[30px] left-0 ">
-                <p className="bg-[#B22323] text-white py-[3px] px-[15px] " style={{borderTopRightRadius: "20px",borderBottomRightRadius: "20px"}}>22% off</p>
+                  <p
+                    className="bg-[#B22323] text-white py-[3px] px-[15px] "
+                    style={{
+                      borderTopRightRadius: "20px",
+                      borderBottomRightRadius: "20px",
+                    }}
+                  >
+                    22% off
+                  </p>
                 </div>
                 <img
                   className="w-[226px] h-[280px]"
@@ -88,9 +128,17 @@ export const BookSlider = ({ headerTitle, css, slider = true }) => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="relative">
+              <div className="relative">
                 <div class="absolute top-[30px] left-0 ">
-                <p className="bg-[#B22323] text-white py-[3px] px-[15px] " style={{borderTopRightRadius: "20px",borderBottomRightRadius: "20px"}}>22% off</p>
+                  <p
+                    className="bg-[#B22323] text-white py-[3px] px-[15px] "
+                    style={{
+                      borderTopRightRadius: "20px",
+                      borderBottomRightRadius: "20px",
+                    }}
+                  >
+                    22% off
+                  </p>
                 </div>
                 <img
                   className="w-[226px] h-[280px]"
