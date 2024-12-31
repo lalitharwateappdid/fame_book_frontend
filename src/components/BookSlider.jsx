@@ -1,4 +1,3 @@
-import detailsBg from "../assets/images/detail-bg.png";
 import detailBook from "../assets/images/details-book.png";
 
 // swiper slider
