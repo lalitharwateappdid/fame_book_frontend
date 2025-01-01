@@ -1,5 +1,8 @@
 import detailBook from "../assets/images/details-book.png";
 
+// components
+import { BookDetailContainer } from "./BookDetailContainer";
+
 // swiper slider
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -17,135 +20,22 @@ export const BookSlider = ({ headerTitle, css, slider = true }) => {
             onSwiper={(swiper) => console.log(swiper)}
           >
             <SwiperSlide>
-              <div className="relative">
-                <div class="absolute top-[30px] left-0 ">
-                  <p
-                    className="bg-[#B22323] text-white py-[3px] px-[15px] "
-                    style={{
-                      borderTopRightRadius: "20px",
-                      borderBottomRightRadius: "20px",
-                    }}
-                  >
-                    22% off
-                  </p>
-                </div>
-                <img
-                  className="w-[226px] h-[280px]"
-                  src={`${detailBook}`}
-                  alt=""
-                />
-              </div>
+                <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative">
-                <div class="absolute top-[30px] left-0 ">
-                  <p
-                    className="bg-[#B22323] text-white py-[3px] px-[15px] "
-                    style={{
-                      borderTopRightRadius: "20px",
-                      borderBottomRightRadius: "20px",
-                    }}
-                  >
-                    22% off
-                  </p>
-                </div>
-                <img
-                  className="w-[226px] h-[280px]"
-                  src={`${detailBook}`}
-                  alt=""
-                />
-              </div>
+               <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative">
-                <div class="absolute top-[30px] left-0 ">
-                  <p
-                    className="bg-[#B22323] text-white py-[3px] px-[15px] "
-                    style={{
-                      borderTopRightRadius: "20px",
-                      borderBottomRightRadius: "20px",
-                    }}
-                  >
-                    22% off
-                  </p>
-                </div>
-                <img
-                  className="w-[226px] h-[280px]"
-                  src={`${detailBook}`}
-                  alt=""
-                />
-                <div className="mt-[10px]">
-                  {/* book name */}
-                  <p className="text-xl font-semibold">Tales under a pur..</p>
-                  {/* author name */}
-                  <p className="text-xs font-thin uppercase text-[#EE8946]">
-                    By Esther Howard
-                  </p>
-
-                  {/* stars and review container */}
-                  <div className="flex justify-between"></div>
-                </div>
-              </div>
+                <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative">
-                <div class="absolute top-[30px] left-0 ">
-                  <p
-                    className="bg-[#B22323] text-white py-[3px] px-[15px] "
-                    style={{
-                      borderTopRightRadius: "20px",
-                      borderBottomRightRadius: "20px",
-                    }}
-                  >
-                    22% off
-                  </p>
-                </div>
-                <img
-                  className="w-[226px] h-[280px]"
-                  src={`${detailBook}`}
-                  alt=""
-                />
-              </div>
+                <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative">
-                <div class="absolute top-[30px] left-0 ">
-                  <p
-                    className="bg-[#B22323] text-white py-[3px] px-[15px] "
-                    style={{
-                      borderTopRightRadius: "20px",
-                      borderBottomRightRadius: "20px",
-                    }}
-                  >
-                    22% off
-                  </p>
-                </div>
-                <img
-                  className="w-[226px] h-[280px]"
-                  src={`${detailBook}`}
-                  alt=""
-                />
-              </div>
+                <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative">
-                <div class="absolute top-[30px] left-0 ">
-                  <p
-                    className="bg-[#B22323] text-white py-[3px] px-[15px] "
-                    style={{
-                      borderTopRightRadius: "20px",
-                      borderBottomRightRadius: "20px",
-                    }}
-                  >
-                    22% off
-                  </p>
-                </div>
-                <img
-                  className="w-[226px] h-[280px]"
-                  src={`${detailBook}`}
-                  alt=""
-                />
-              </div>
+            <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
             </SwiperSlide>
           </Swiper>
         </div>

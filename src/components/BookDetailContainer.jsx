@@ -18,7 +18,7 @@ export const BookDetailContainer = ({ image, title, author, reviews, rating, sta
           </p>
         </div>
 
-        <div className="absolute left-[12px] lg:left-[14px] " style={{border: "2px solid #fff", height:"80.5%", opacity:"0.4"}}>
+        <div className="absolute left-[12px] lg:left-[10px] h-[80.5%]" style={{border: "2px solid #fff", opacity:"0.4", zIndex:"1"}}>
            
         </div>
         {/* book image */}
@@ -27,8 +27,8 @@ export const BookDetailContainer = ({ image, title, author, reviews, rating, sta
         </div>
 
         {/* book short details */}
-        <div className="mt-[10px]">
-          <p className="font-semibold text-xl">{title}</p>
+        <div className="mt-[10px]" >
+          <p className="font-semibold text-xl " >{title}</p>
           <p className="uppercase text-[#EE8946] text-sm">{author}</p>
 
           {/* stars and review container */}
