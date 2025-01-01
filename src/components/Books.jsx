@@ -32,7 +32,6 @@ export const Books = () => {
 
                      {/* books */}
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 gap-y-8 my-[20px]">
-                        
                             <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
                             <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
                             <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
@@ -43,8 +42,6 @@ export const Books = () => {
                             <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
                             <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
                             <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
-                    
-                       
                     </div>
 
                 </div>
