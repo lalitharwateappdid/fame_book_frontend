@@ -6,7 +6,7 @@ export const BookDetailContainer = ({ image, title, author, reviews, rating, sta
   return (
     <>
       <div className="relative">
-        <div className="absolute top-[40px] left-0 ">
+        <div className="absolute top-[40px] left-0" style={{zIndex:"2"}}>
           <p
             className="bg-[#B22323] text-white py-[3px] px-[15px] "
             style={{
@@ -16,6 +16,10 @@ export const BookDetailContainer = ({ image, title, author, reviews, rating, sta
           >
             22% off
           </p>
+        </div>
+
+        <div className="absolute left-[12px] lg:left-[14px] " style={{border: "2px solid #fff", height:"80.5%", opacity:"0.4"}}>
+           
         </div>
         {/* book image */}
         <div>
