@@ -1,3 +1,7 @@
+// react icons
+import { IoPlayCircleOutline } from "react-icons/io5";
+
+
 // swiper slider
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -12,7 +16,7 @@ import Anime from "../assets/images/home/anime.png"
 export const BestSellingSlider = ({css}) => {
     return (
         <>
-              <div className={`${css} px-[10px]`}>
+              <div className={`${css} p-[50px]`}>
         <div className="mt-[20px]">
           <Swiper
             spaceBetween={20}
@@ -41,14 +45,20 @@ export const BestSellingSlider = ({css}) => {
                     <img src={Shiva} alt="" />
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div >
+              <SwiperSlide >
+                <div class="flex justify-center">
                     <img src={Soul} alt="" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div class="flex justify-center">
+                <div class="flex items-center flex-col">
                     <img src={Naruto} alt="" />
+
+                    <div class="flex flex-col items-center text-white space-y-3">
+                        <p>Written by: Amol patil</p>
+                        <p className="text-center">Society: Anthropology - Civilisation</p>
+                        <p className="flex items-center gap-2"><IoPlayCircleOutline />Sample</p>
+                    </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
