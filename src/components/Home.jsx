@@ -241,6 +241,13 @@ export const Home = () => {
   return (
     <>
       <Main>
+
+      {/* hero section */}
+      <div style={divStyle}>
+
+       <p className="text-white">asdadasd</p> 
+      </div>
+
         {/* Immerse Yourself in Bestselling Stories */}
         <div className="bg-black">
         <div className="max-w-7xl mx-auto">
@@ -458,4 +465,10 @@ const borderGradient = {
   // borderRadius: "20px", 
   overflow: "hidden", 
 };
+
+  const divStyle = {
+    backgroundImage: "url('../assets/images/home/anime_character.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  };
 
