@@ -49,6 +49,5 @@ export const Footer = () => {
 
 const linearGradient = {
     color: "#fff",
-    background: "rgb(37,37,37)",
     background: 'linear-gradient(90deg, rgba(37,37,37,1) 38%, rgba(178,35,35,1) 100%)',
 }
