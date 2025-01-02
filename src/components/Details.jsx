@@ -1,6 +1,12 @@
 // image asset
 import detailsBg from "../assets/images/detail-bg.png";
 import detailBook from "../assets/images/details-book.png";
+import DiscoverA1 from "../assets/images/home/discover-a-1.png";
+import DiscoverA2 from "../assets/images/home/discover-a-2.png";
+import DiscoverA3 from "../assets/images/home/discover-a-3.png";
+import DiscoverA4 from "../assets/images/home/discover-a-4.png";
+import DiscoverA5 from "../assets/images/home/discover-a-5.png";
+import DiscoverA6 from "../assets/images/home/discover-a-6.png";
 
 // components
 import { BookSlider } from "./BookSlider";
@@ -10,6 +16,39 @@ import { Main } from "./layouts/Main";
 import { LuBookOpenText } from "react-icons/lu";
 import { CiBookmark } from "react-icons/ci";
 import { CiStar } from "react-icons/ci";
+
+const sales1 = [
+  {
+    title: "Pencil",
+    image: DiscoverA1,
+    discount: 12,
+  },
+  {
+    title: "Portals",
+    image: DiscoverA2,
+    discount: 12,
+  },
+  {
+    title: "Tales under a pur..",
+    image: DiscoverA3,
+    discount: 22,
+  },
+  {
+    title: "The Book Of Art",
+    image: DiscoverA4,
+    discount: 32,
+  },
+  {
+    title: "Anime A History",
+    image: DiscoverA5,
+    discount: 22,
+  },
+  {
+    title: "Soul",
+    image: DiscoverA6,
+    discount: 22,
+  },
+];
 
 export const Details = () => {
   return (
@@ -118,6 +157,7 @@ export const Details = () => {
 
       <BookSlider
         headerTitle={"Popular book’s"}
+        datas={sales1}
         css={"p-[20px] py-[20px] lg:p-[100px] lg:py-[50px]"}
       />
     </Main>

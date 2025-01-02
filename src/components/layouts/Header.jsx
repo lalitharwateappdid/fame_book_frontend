@@ -17,7 +17,7 @@ export const Header = () => {
 
     return (
         <>
-         <nav className=" text-white sticky top-0 z-50 ">
+         <nav className=" text-white sticky top-0 z-50 " style={{"border-bottom":'1px solid #333333'}}>
             <div className="bg-black p-4 ">
       <div className="max-w-7xl mx-auto flex items-center justify-between ">
         {/* Logo */}
@@ -45,7 +45,7 @@ export const Header = () => {
       {/* Menu Items */}
     <div className="bg-black absolute lg:static right-0 left-0 transistion-all ease-in">
       <div className=" max-w-7xl mx-auto  ">
-        <div className={`lg:flex lg:space-x-6 ${isMenuOpen ? 'block' : 'hidden'} p-[20px] md:ps-[0px] ` }>
+        <div  className={`lg:flex lg:space-x-6 ${isMenuOpen ? 'block' : 'hidden'} p-[10px] md:ps-[0px] ` }>
           <a href="#" className="block  lg:pt-[0px] text-xs uppercase font-thin active " >Home</a>
           <a href="#" className="block  pt-5 lg:pt-[0px] text-xs uppercase font-thin">Browse</a>
           <a href="#" className="block  pt-5 lg:pt-[0px] text-xs  uppercase font-thin">News & Articles</a>

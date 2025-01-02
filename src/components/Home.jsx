@@ -250,7 +250,7 @@ export const Home = () => {
          className="py-[70px]"
           style={{
             position: "relative",
-            height: "120vh",
+            height: "140vh",
             backgroundImage: `url(${AnimeCharacter})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -270,7 +270,10 @@ export const Home = () => {
           >
             {/* Add other content here, if needed */}
             <div className="flex items-center flex-col">
+              <div className="mt-[40px]">
+
               <img src={Logo} alt="" className="inline" />
+              </div>
               <h3 className="font-bold text-3xl text-white">Classic eBook</h3>
               <p className="text-white">New to our eBooks? Enjoy your first title on us—absolutely free!</p>
             </div>
@@ -436,7 +439,7 @@ export const Home = () => {
 
         <div className="max-w-7xl mx-auto">
           {/* discover books */}
-          <div className="p-[20px]">
+          {/* <div className="p-[20px]">
             <div className="grid md:grid-cols-2">
               <div className="flex flex-col items-center">
                 <img
@@ -456,10 +459,12 @@ export const Home = () => {
                 <h3 className="font-bold text-2xl capitalize w-[70%]">
                   over what millions of listeners are loving right now.
                 </h3>
-                <div>{/* <BookSlider/> */}</div>
+                <div>
+                  <BookSlider/>
+                  </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* featured books */}
           <div className="py-[20px]">
