@@ -16,10 +16,9 @@ export const Details = () => {
       <section
         className="p-[20px] py-[20px] lg:p-[100px] lg:py-[50px] bg-cover bg-center w-100 "
         style={{
-            background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 30%, #000000 70%), url(${detailsBg})`,
+          background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 30%, #000000 70%), url(${detailsBg})`,
         }}
       >
-
         {/* breadcrumb */}
         <p className="text-white font-bold mb-[30px]">New/Action</p>
 
@@ -28,7 +27,23 @@ export const Details = () => {
           <div className="flex flex-col lg:flex-row  lg:gap-[60px]">
             <div class="flex flex-col items-center">
               {/* image container */}
-              <div>
+              <div className="relative">
+                <div
+                  className="absolute top-[40px] left-0"
+                  style={{ zIndex: "2" }}
+                >
+                  <p
+                    className="bg-[#B22323] text-white py-[3px] px-[15px] "
+                    style={{
+                      borderTopRightRadius: "20px",
+                      borderBottomRightRadius: "20px",
+                    }}
+                  >
+                    22% off
+                  </p>
+                </div>
+
+                <div className="absolute left-[12px] lg:left-[10px] h-[100%]" style={{border: "2px solid #fff", opacity:"0.4", zIndex:"1"}}></div>
                 <img
                   className="w-[324px] h-[425px]"
                   src={`${detailBook}`}
@@ -53,7 +68,9 @@ export const Details = () => {
             </div>
 
             <div className="mt-[30px] flex flex-col  justify-end">
-              <h3 className="text-4xl lg:text-5xl text-white inria-serif">Tales Under a Purple Sky</h3>
+              <h3 className="text-4xl lg:text-5xl text-white inria-serif">
+                Tales Under a Purple Sky
+              </h3>
 
               {/* star and reviews container */}
               <div className="flex gap-2 items-center mt-[20px] text-white">
@@ -95,10 +112,12 @@ export const Details = () => {
             </div>
           </div>
         </div>
-        
       </section>
-      
-      <BookSlider headerTitle={"Popular book’s"} css={"p-[20px] py-[20px] lg:p-[100px] lg:py-[50px]"} />
+
+      <BookSlider
+        headerTitle={"Popular book’s"}
+        css={"p-[20px] py-[20px] lg:p-[100px] lg:py-[50px]"}
+      />
     </>
   );
 };
