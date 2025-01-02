@@ -40,6 +40,8 @@ import DiscoverD5 from "../assets/images/home/discover-d-5.png";
 import DiscoverD6 from "../assets/images/home/discover-d-6.png";
 import AnimeCharacter from "../assets/images/home/anime_character.png";
 import AnimeBg from "../assets/images/home/anime-carousel.png"
+import AnimeGif from "../assets/images/home/thunder.gif"
+
 
 const sales1 = [
   {
@@ -248,7 +250,7 @@ export const Home = () => {
          className="py-[70px]"
           style={{
             position: "relative",
-            height: "100vh",
+            height: "120vh",
             backgroundImage: `url(${AnimeCharacter})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -286,7 +288,7 @@ export const Home = () => {
             </div>
 
             <div className="px-[30px]">
-              <img src={AnimeBg} className="object-cover" alt="" />
+              <img src={AnimeBg} className="object-cover  h-90 w-100 " alt="" />
             </div>
           </div>
         </div>
@@ -304,7 +306,13 @@ export const Home = () => {
                 Audible app. Explore some top picks below!
               </h3>
             </div>
+            <div style={{
+               backgroundImage: `url(${AnimeGif})`,
+               backgroundRepeat: "no-repeat",
+               backgroundSize: "cover",
+            }}>
             <BestSellingSlider />
+            </div>
           </div>
         </div>
 
@@ -490,6 +498,7 @@ export const Home = () => {
             <SpecialBookSlider datas={specialBooks} />
           </div>
         </div>
+        <div className="max-w-7xl mx-auto">
         <div>
           <div className="py-[20px]">
             <BookSlider datas={sales3} headerTitle={"Books on sale"} />
@@ -497,6 +506,7 @@ export const Home = () => {
           <div className="py-[20px]">
             <BookSlider datas={sales4} headerTitle={"Books on sale"} />
           </div>
+        </div>
         </div>
       </Main>
     </>

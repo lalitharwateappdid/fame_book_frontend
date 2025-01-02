@@ -3,6 +3,10 @@ import { useState } from "react"
 // react icons
 import { FaBars, FaTimes } from 'react-icons/fa'
 
+
+// assets
+import NewLogo from "../../assets/images/home/New_logo.png"
+
 export const Header = () => {
     const [isMenuOpen,setIsMenuOpen] = useState(false)
 
@@ -18,7 +22,9 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between ">
         {/* Logo */}
         <div className="text-xl font-bold">
-          <a href="#">Logo</a>
+          <a href="#">
+            <img src={NewLogo} className="w-[180px]" alt="" />
+          </a>
         </div>
 
             <div className="flex items-center gap-[100px] hidden lg:block">
