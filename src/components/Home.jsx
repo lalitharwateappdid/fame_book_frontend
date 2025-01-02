@@ -38,6 +38,8 @@ import DiscoverD3 from "../assets/images/home/discover-d-3.png";
 import DiscoverD4 from "../assets/images/home/discover-d-4.png";
 import DiscoverD5 from "../assets/images/home/discover-d-5.png";
 import DiscoverD6 from "../assets/images/home/discover-d-6.png";
+import AnimeCharacter from "../assets/images/home/anime_character.png";
+import AnimeBg from "../assets/images/home/anime-carousel.png"
 
 const sales1 = [
   {
@@ -241,25 +243,68 @@ export const Home = () => {
   return (
     <>
       <Main>
+        {/* hero section */}
+        <div
+         className="py-[70px]"
+          style={{
+            position: "relative",
+            height: "100vh",
+            backgroundImage: `url(${AnimeCharacter})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background:
+                "linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.9) 70%)", // Linear gradient with black overlay
+              zIndex: 1,
+            }}
+          >
+            {/* Add other content here, if needed */}
+            <div className="flex items-center flex-col">
+              <img src={Logo} alt="" className="inline" />
+              <h3 className="font-bold text-3xl text-white">Classic eBook</h3>
+              <p className="text-white">New to our eBooks? Enjoy your first title on us—absolutely free!</p>
+            </div>
 
-      {/* hero section */}
-      <div style={divStyle}>
+            <div className="flex items-center flex-col justify-center space-y-3 mt-[20px]">
+              <a
+                href="#"
+                className="inline bg-[#B22323] rounded-full text-white px-[50px] py-[6px]"
+              >
+                Start your free trial now
+              </a>
+              <p className="text-white text-xs">
+                ₹199 per month after 30-day free trial. Cancel anytime.
+              </p>
+            </div>
 
-       <p className="text-white">asdadasd</p> 
-      </div>
+            <div className="px-[30px]">
+              <img src={AnimeBg} className="object-cover" alt="" />
+            </div>
+          </div>
+        </div>
 
         {/* Immerse Yourself in Bestselling Stories */}
-        <div className="bg-black">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col items-center space-y-4">
-            <h3 className="text-white text-3xl font-bold">Immerse Yourself in Bestselling Stories</h3>
-            <h3 className="text-white  w-[60%] text-center">
-              Discover captivating stories and timeless classics from your
-              favorite authors and genres. Stream or download anytime with the
-              Audible app. Explore some top picks below!
-            </h3>
-          </div>
-          <BestSellingSlider/>
+        <div className="bg-black p-[50px]">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col items-center space-y-4">
+              <h3 className="text-white text-3xl font-bold">
+                Immerse Yourself in Bestselling Stories
+              </h3>
+              <h3 className="text-white  w-[60%] text-center">
+                Discover captivating stories and timeless classics from your
+                favorite authors and genres. Stream or download anytime with the
+                Audible app. Explore some top picks below!
+              </h3>
+            </div>
+            <BestSellingSlider />
           </div>
         </div>
 
@@ -462,13 +507,12 @@ const borderGradient = {
   borderImage: "linear-gradient(to bottom, #B22323 0%, #26373700 70%) 1",
   borderStyle: "solid",
   borderWidth: "1px",
-  // borderRadius: "20px", 
-  overflow: "hidden", 
+  // borderRadius: "20px",
+  overflow: "hidden",
 };
 
-  const divStyle = {
-    backgroundImage: "url('../assets/images/home/anime_character.png')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
-
+const divStyle = {
+  backgroundImage: "url('../assets/images/home/anime_character.png')",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+};
