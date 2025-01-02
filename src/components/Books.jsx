@@ -3,6 +3,7 @@ import { GoSortAsc } from "react-icons/go";
 
 // components
 import { BookDetailContainer } from "./BookDetailContainer";
+import { Main } from "./layouts/Main";
 
 // assets
 import detailBook from "../assets/images/details-book.png";
@@ -11,10 +12,16 @@ import detailBook from "../assets/images/details-book.png";
 export const Books = () => {
     return (
         <>
+        <Main>
         <section
                className="p-[20px] py-[20px] lg:p-[100px] lg:py-[50px] bg-cover bg-center w-100 "
              >
-                <div className="grid grid-cols-1">
+                
+                <div className="flex ">
+                    {/* <div>
+                    <h3 className="font-bold text-3xl">Filter Option</h3>
+                    </div> */}
+                    <div>
                      <h3 className="font-bold text-3xl">Books</h3>
 
                         {/* filters */}
@@ -43,9 +50,11 @@ export const Books = () => {
                             <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
                             <BookDetailContainer image={detailBook} title={"Tales under a pur.."} author={"By Esther Howard"}/>
                     </div>
+                    </div>
 
                 </div>
         </section>
+        </Main>
         </>
     )
 }

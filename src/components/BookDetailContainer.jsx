@@ -1,10 +1,15 @@
 // react icons
 import { LiaStarSolid } from "react-icons/lia";
 
+// components
+import { Main } from "./layouts/Main";
+
 
 export const BookDetailContainer = ({ image, title, author, reviews, rating, stars }) => {
   return (
     <>
+    
+      <div>
       <div className="relative">
         <div className="absolute top-[40px] left-0" style={{zIndex:"2"}}>
           <p
@@ -49,6 +54,8 @@ export const BookDetailContainer = ({ image, title, author, reviews, rating, sta
           </div>
         </div>
       </div>
+      </div>
+     
     </>
   );
 };
