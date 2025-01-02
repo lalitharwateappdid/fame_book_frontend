@@ -2,6 +2,7 @@
 import { Main } from "./layouts/Main";
 import { BookSlider } from "./BookSlider";
 import { FeaturedProductSlider } from "../FeaturedProductSlider";
+import { SpecialBookSlider } from "./SpecialBookSlider";
 
 // assets
 import DiscoverImage from "../assets/images/home/discover_image.png";
@@ -196,6 +197,42 @@ const featured1 = [
   },
 ];
 
+
+const specialBooks = [
+  {
+    image:DiscoverA1,
+    title:"Really good actu..",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    og_price:12,
+    discount_price: 12,
+    tag:["sci-fi novel",'sci-fi novel'],
+  },
+  {
+    image:DiscoverA3,
+    title:"A Heavy Lift",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    og_price:12,
+    discount_price: 12,
+    tag:["sci-fi novel",'sci-fi novel'],
+  },
+  {
+    image: DiscoverA4,
+    title:"Really good actu..",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    og_price:12,
+    discount_price: 12,
+    tag:["sci-fi novel",'sci-fi novel'],
+  },
+  {
+    image:DiscoverA5,
+    title:"Really good actu..",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    og_price:12,
+    discount_price: 12,
+    tag:["sci-fi novel",'sci-fi novel'],
+  }
+]
+
 export const Home = () => {
   return (
     <>
@@ -377,8 +414,26 @@ export const Home = () => {
             <BookSlider datas={sales2} headerTitle={"Books on sale"} />
           </div>
 
+          </div>
+          
+
+            {/* special Highlight */}
+            <div className="bg-[#FFEFE4] py-[50px]">
+              <div className="max-w-7xl mx-auto">
+              <div className="flex justify-center items-center flex-col">
+                <h3 className="text-3xl capitalize font-bold mb-[10px]">Special Highlights</h3>
+                <p className="w-[60%] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.s</p>
+              </div>
+                <SpecialBookSlider datas={specialBooks}/>
+            </div>
+            </div>
+          <div>
+
           <div className="py-[20px]">
             <BookSlider datas={sales3} headerTitle={"Books on sale"} />
+          </div>
+          <div className="py-[20px]">
+            <BookSlider datas={sales4} headerTitle={"Books on sale"} />
           </div>
         </div>
       </Main>
