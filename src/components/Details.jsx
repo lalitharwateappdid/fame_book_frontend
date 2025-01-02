@@ -4,6 +4,7 @@ import detailBook from "../assets/images/details-book.png";
 
 // components
 import { BookSlider } from "./BookSlider";
+import { Main } from "./layouts/Main";
 
 // react icons
 import { LuBookOpenText } from "react-icons/lu";
@@ -13,6 +14,7 @@ import { CiStar } from "react-icons/ci";
 export const Details = () => {
   return (
     <>
+    <Main>
       <section
         className="p-[20px] py-[20px] lg:p-[100px] lg:py-[50px] bg-cover bg-center w-100 "
         style={{
@@ -118,6 +120,7 @@ export const Details = () => {
         headerTitle={"Popular book’s"}
         css={"p-[20px] py-[20px] lg:p-[100px] lg:py-[50px]"}
       />
+    </Main>
     </>
   );
 };
