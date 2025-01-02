@@ -3,6 +3,7 @@ import { Main } from "./layouts/Main";
 import { BookSlider } from "./BookSlider";
 import { FeaturedProductSlider } from "../FeaturedProductSlider";
 import { SpecialBookSlider } from "./SpecialBookSlider";
+import { BestSellingSlider } from "./BestSellingStoriesSlider";
 
 // assets
 import DiscoverImage from "../assets/images/home/discover_image.png";
@@ -197,53 +198,66 @@ const featured1 = [
   },
 ];
 
-
 const specialBooks = [
   {
-    image:DiscoverA1,
-    title:"Really good actu..",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    og_price:12,
+    image: DiscoverA1,
+    title: "Really good actu..",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    og_price: 12,
     discount_price: 12,
-    tag:["sci-fi novel",'sci-fi novel'],
+    tag: ["sci-fi novel", "sci-fi novel"],
   },
   {
-    image:DiscoverA3,
-    title:"A Heavy Lift",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    og_price:12,
+    image: DiscoverA3,
+    title: "A Heavy Lift",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    og_price: 12,
     discount_price: 12,
-    tag:["sci-fi novel",'sci-fi novel'],
+    tag: ["sci-fi novel", "sci-fi novel"],
   },
   {
     image: DiscoverA4,
-    title:"Really good actu..",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    og_price:12,
+    title: "Really good actu..",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    og_price: 12,
     discount_price: 12,
-    tag:["sci-fi novel",'sci-fi novel'],
+    tag: ["sci-fi novel", "sci-fi novel"],
   },
   {
-    image:DiscoverA5,
-    title:"Really good actu..",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    og_price:12,
+    image: DiscoverA5,
+    title: "Really good actu..",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    og_price: 12,
     discount_price: 12,
-    tag:["sci-fi novel",'sci-fi novel'],
-  }
-]
+    tag: ["sci-fi novel", "sci-fi novel"],
+  },
+];
 
 export const Home = () => {
   return (
     <>
       <Main>
-
-      {/* Immerse Yourself in Bestselling Stories */}
-      
+        {/* Immerse Yourself in Bestselling Stories */}
+        <div className="bg-black">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col items-center space-y-4">
+            <h3 className="text-white text-3xl font-bold">Immerse Yourself in Bestselling Stories</h3>
+            <h3 className="text-white  w-[60%] text-center">
+              Discover captivating stories and timeless classics from your
+              favorite authors and genres. Stream or download anytime with the
+              Audible app. Explore some top picks below!
+            </h3>
+          </div>
+          <BestSellingSlider/>
+          </div>
+        </div>
 
         {/* 30 days trail */}
         <div
-         
           style={{
             background: "radial-gradient(rgb(88 0 0), black 70%)",
           }}
@@ -398,12 +412,6 @@ export const Home = () => {
             />
           </div>
 
-          {/* book on sales */}
-          {/* <div className="py-[20px]">
-            <h3 className="font-bold text-3xl">Books on sale</h3>
-                <BookSlider/>
-            </div> */}
-
           {/* book on sales 1 */}
           <div className="py-[20px] ">
             <BookSlider datas={sales1} headerTitle={"Books on sale"} />
@@ -413,22 +421,24 @@ export const Home = () => {
           <div className="py-[20px]">
             <BookSlider datas={sales2} headerTitle={"Books on sale"} />
           </div>
+        </div>
 
+        {/* special Highlight */}
+        <div className="bg-[#FFEFE4] py-[50px]">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex justify-center items-center flex-col">
+              <h3 className="text-3xl capitalize font-bold mb-[10px]">
+                Special Highlights
+              </h3>
+              <p className="w-[60%] text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.s
+              </p>
+            </div>
+            <SpecialBookSlider datas={specialBooks} />
           </div>
-          
-
-            {/* special Highlight */}
-            <div className="bg-[#FFEFE4] py-[50px]">
-              <div className="max-w-7xl mx-auto">
-              <div className="flex justify-center items-center flex-col">
-                <h3 className="text-3xl capitalize font-bold mb-[10px]">Special Highlights</h3>
-                <p className="w-[60%] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.s</p>
-              </div>
-                <SpecialBookSlider datas={specialBooks}/>
-            </div>
-            </div>
-          <div>
-
+        </div>
+        <div>
           <div className="py-[20px]">
             <BookSlider datas={sales3} headerTitle={"Books on sale"} />
           </div>
@@ -445,17 +455,7 @@ const borderGradient = {
   borderImage: "linear-gradient(to bottom, #B22323 0%, #26373700 70%) 1",
   borderStyle: "solid",
   borderWidth: "1px",
-  // borderRadius: "20px", // Apply border-radius to round corners
-  overflow: "hidden", // Prevents content from overflowing the rounded corners
+  // borderRadius: "20px", 
+  overflow: "hidden", 
 };
 
-const divStyle = {
-  width: "300px",
-  height: "80px",
-  border: "double 1em transparent",
-  borderRadius: "30px",
-  backgroundImage:
-    "linear-gradient(white, white), linear-gradient(to right, green, gold)",
-  backgroundOrigin: "border-box",
-  backgroundClip: "content-box, border-box",
-};

@@ -2,8 +2,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-// components
-import { BookDetailContainer } from "./BookDetailContainer";
 
 export const SpecialBookSlider = ({ css, datas }) => {
   return (
