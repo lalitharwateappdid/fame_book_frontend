@@ -39,7 +39,7 @@ export const FeaturedProductSlider = ({
                 slidesPerView: 4,
               },
               1280: {
-                slidesPerView: 5,
+                slidesPerView: 6,
               },
               autoplay: true,
             }}
@@ -47,11 +47,8 @@ export const FeaturedProductSlider = ({
             {datas.map((data) => (
               <SwiperSlide>
                 <div className="relative">
-                  <div
-                    className="flex justify-center items-center h-[100%] relative"
-                    style={{book, backgroundColor:data.color}}
-                  >
-                    {/* <div className="relative"> */}
+                <div className={`bg-[#F7ABAD] relative flex justify-center items-center h-[100%]`} style={book}>
+                  {/* <div className="relative"> */}
                     <div
                       className="absolute left-[12px] lg:left-[10px] h-[100vh]"
                       style={{
@@ -59,7 +56,9 @@ export const FeaturedProductSlider = ({
                         opacity: "0.4",
                         zIndex: "1",
                       }}
-                    ></div>
+                    >
+
+                    </div>
 
                     <div>
                       <div className="">
@@ -82,5 +81,5 @@ export const FeaturedProductSlider = ({
 const book = {
   borderTopRightRadius: "20px",
   borderBottomRightRadius: "20px",
-  height: "280px",
-};
+height: "280px"
+}
